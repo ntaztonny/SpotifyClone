@@ -1,9 +1,14 @@
 import "./App.css";
+import Login from "./Login";
 
 function App() {
   return (
     <div className="App">
-      <p>This is the APP component</p>
+      <Login />
+      {/**Spotify Login
+       * Logo
+       * buttons
+       */}
     </div>
   );
 }
