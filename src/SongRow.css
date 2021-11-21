@@ -23,7 +23,7 @@
 .songRow__info > p {
   font-size: 14px;
   margin-top: 3px;
-  color: gray;
+  color: rgb(184, 179, 179);
 }
 
 .songRow__album {

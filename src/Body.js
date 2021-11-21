@@ -18,18 +18,25 @@ function Body({ spotify }) {
           <strong>PLAYLIST</strong>
           <h2>{discover_weekly?.name}</h2>
           <p>{discover_weekly?.description}</p>
-          <p> Likes: {discover_weekly?.followers.total}</p>
+          <p>
+            {" "}
+            {discover_weekly?.followers.total} <strong>Likes:</strong>,{" "}
+            {discover_weekly?.tracks.total} <strong>songs</strong>
+          </p>
         </div>
       </div>
       <div className="body__songs">
-        <div className="body__icons">
-          <PlayCircleFilledIcon className="body__shuffle" />
-          <FavoriteIcon fontSize="large" />
-          <MoreHorizIcon />
+        <div className="playing__songs">
+          <div className="body__icons">
+            <PlayCircleFilledIcon className="body__shuffle" />
+            <FavoriteIcon fontSize="large" />
+            <MoreHorizIcon />
+          </div>
+
+          {discover_weekly?.tracks.items.map((item) => (
+            <SongRow track={item.track} />
+          ))}
         </div>
-        {discover_weekly?.tracks.items.map((item) => (
-          <SongRow track={item.track} />
-        ))}
       </div>
     </div>
   );

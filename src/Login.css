@@ -2,19 +2,30 @@
   display: grid;
   place-items: center;
   height: 100vh;
+  color: white;
   background-color: black;
 }
 
-.login > img {
-  width: 100%;
+.logo {
+  margin: auto;
+}
+.logo > img {
+  width: 300px;
   height: auto;
+  margin: auto;
+  padding-left: 50px;
 }
 
+.logo > hr {
+  width: 40%;
+  margin: 50px auto;
+}
 .login > a {
-  padding: 20px;
+  padding: 10px 30px;
   background-color: #1db954;
   border-radius: 99px;
   font-weight: 800px;
+  font-size: 16px;
   color: white;
   text-decoration: none;
 }

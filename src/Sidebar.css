@@ -1,14 +1,17 @@
 .sidebar {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   flex: 0.2;
-  color: white;
   padding-left: 10px;
   padding-right: 10px;
-  min-width: 230px;
-  height: 100vh;
-  background-color: #040404;
+  color: white;
+  background-color: #000000;
 }
-
+.thanks {
+  padding-left: 15px;
+  margin-bottom: 5px;
+  color: gray;
+}
 .sidebar__logo {
   margin-right: auto;
   height: 70px;
@@ -17,4 +20,6 @@
 
 .sidebar__title {
   margin-left: 10px;
+  padding: 5px;
+  font-size: 12px;
 }
