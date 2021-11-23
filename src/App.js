@@ -10,14 +10,14 @@ const spotify = new SpotifyWebApi();
 
 function App() {
   const [{ user, token }, dispatch] = useDataLayerValue();
-  //const [token, setToken] = useState(null);
+
   useEffect(() => {
     const hash = getTokenFromUrl();
     const _token = hash.access_token;
+    console.log("token ", _token);
     window.location.hash = "";
     if (_token) {
       //Conect spotify to react
-
       dispatch({
         type: "SET_TOKEN",
         token: _token,
@@ -35,15 +35,24 @@ function App() {
           type: "SET_PLAYLISTS",
           playlists: playlists,
         });
+        console.log("MyplayLists", playlists);
+        //debugger;
+        let playListID =
+          playlists.total !== 0
+            ? playlists.items[0].id
+            : "37i9dQZF1DX2sJGkrvCPgm";
+        console.log("myListID", playListID);
+        //get and set the first playlist
+        spotify.getPlaylist("37i9dQZF1DX2sJGkrvCPgm").then((response) => {
+          //spotify.getPlaylist(availableListID).then((response) => {
+          console.log("playlistTitle", response);
+          dispatch({
+            type: "SET_DISCOVER_WEEKLY",
+            discover_weekly: response,
+          });
+        });
       });
     }
-    spotify.getPlaylist("37i9dQZF1DX2sJGkrvCPgm").then((response) => {
-      console.log("playlistTitle", response);
-      dispatch({
-        type: "SET_DISCOVER_WEEKLY",
-        discover_weekly: response,
-      });
-    });
   }, []);
 
   return (
