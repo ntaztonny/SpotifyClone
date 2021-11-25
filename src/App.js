@@ -43,7 +43,7 @@ function App() {
             : "37i9dQZF1DX2sJGkrvCPgm";
         console.log("myListID", playListID);
         //get and set the first playlist
-        spotify.getPlaylist("37i9dQZF1DX2sJGkrvCPgm").then((response) => {
+        spotify.getPlaylist(playListID).then((response) => {
           //spotify.getPlaylist(availableListID).then((response) => {
           console.log("playlistTitle", response);
           dispatch({

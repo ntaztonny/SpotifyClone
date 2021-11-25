@@ -4,7 +4,7 @@
   justify-content: space-between;
   bottom: 0;
   height: 65px;
-  width: 100%;
+  width: 99%;
   background-color: #282828;
   padding: 20px;
 }
@@ -33,17 +33,20 @@
 
 .footer__green {
   color: rgb(138, 137, 137);
+  font-size: 17px !important;
 }
 
 .footer__green:hover {
   color: white;
 }
-.footer__songInfo > h4 {
+.footer__songInfo > h5 {
   margin-bottom: 5px;
+  overflow: visible;
 }
 
 .footer__songInfo > p {
   font-size: 12px;
+  text-overflow: ellipsis;
 }
 .footer__middle {
   flex: 0.4;

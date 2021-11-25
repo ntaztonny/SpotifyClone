@@ -8,7 +8,7 @@ function Player({ spotity }) {
   return (
     <div className="player">
       <div className="player__body">
-        <Sidebar />
+        <Sidebar spotify={spotity} />
         <Body spotify={spotity} />
       </div>
       <Footer />

@@ -15,12 +15,24 @@
 
 .songRow__info {
   margin-left: 20px;
+  display: flex;
+  width: 100%;
 }
-
-.songRow__info > h1 {
+.songRow__info__left {
+  /* width: 44%; */
+  flex: 0.42;
+}
+.songRow__albumname {
+  font-weight: 600;
+  flex: 0.4;
+  font-size: 14px;
+  margin-top: 3px;
+  color: rgb(184, 179, 179);
+}
+.songRow__info__left > h1 {
   font-size: 16px;
 }
-.songRow__info > p {
+.songRow__info__left > p {
   font-size: 14px;
   margin-top: 3px;
   color: rgb(184, 179, 179);
