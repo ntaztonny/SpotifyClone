@@ -36,14 +36,15 @@ function App() {
           playlists: playlists,
         });
         console.log("MyplayLists", playlists);
-        //debugger;
+
         let playListID =
           playlists.total !== 0
-            ? playlists.items[0].id
+            ? playlists.items[1].id
             : "37i9dQZF1DX2sJGkrvCPgm";
         console.log("myListID", playListID);
+        console.log("myListID type", typeof playListID);
         //get and set the first playlist
-        spotify.getPlaylist(playListID).then((response) => {
+        spotify.getPlaylist("0pEhLrGaEc3tyiXYk3gTnv").then((response) => {
           //spotify.getPlaylist(availableListID).then((response) => {
           console.log("playlistTitle", response);
           dispatch({
