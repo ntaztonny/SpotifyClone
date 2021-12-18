@@ -6,10 +6,10 @@ The application is a clone for Spotify's music player functionality. You can fin
 
 ### Functionality
 
-The application is a clone for the spotify's music player app where:<br />
+The application is a clone for the spotify's music player app:<br />
 => To use the app, you must have a spotify account, because authetication is only by spotify <br/>
 => You can select a playlist with a single click and play a given playlist with a double click.<br />
-=> Can play a particular song from a playlist with a double click <br />
+=> You can play a particular song from a playlist with a double click <br />
 
 ### Development
 
@@ -23,4 +23,4 @@ The application is a clone for the spotify's music player app where:<br />
 => #git clone git@github.com:ntaztonny/SpotifyClone.git<br />
 => After cloning, cd to spotify-clone<br />
 => Run #npm install to add all dependences and npm modules<br />
-=> Run #npm start to run the application
+=> Run #npm start to start the application
