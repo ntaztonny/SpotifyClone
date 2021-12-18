@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+This is a Spotify clone built with React, React Context API, Firebase, CSS for styling the UI and Material-UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### About the app:
 
-## Available Scripts
+The application is a clone for Spotify's music player functionality. You can find the deployed app on: https://spotifyclone-7e062.web.app/
 
-In the project directory, you can run:
+### Functionality
 
-### `npm start`
+The application is a clone for the spotify's music player app where:<br />
+=> To use the app, you must have a spotify account, because authetication is only by spotify <br/>
+=> You can select a playlist with a single click and play a given playlist with a double click.<br />
+=> Can play a particular song from a playlist with a double click <br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Development
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+=> The application is developed with React JS, using the React Context API to manage playlists and songs, the playing song's state.<br />
+=> The Spotify API is used to obtain songs and playlists from the actual spotify. The API also provides paticular information about a given song like the song name, photo, date added, the artist, album and also a given playlist <br />
+=> Using the material-UI, I can render the player's controls like the play button, playlist, sound control and also icons.<br />
+=> React context API is used to manage a playing song to display the song picture, name and artist on the player control. To manage playlists, the React Context API is also used to manage and load the playlists.
 
-### `npm test`
+### Cloning and usage of the code:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=> #git clone git@github.com:ntaztonny/SpotifyClone.git<br />
+=> After cloning, cd to spotify-clone<br />
+=> Run #npm install to add all dependences and npm modules<br />
+=> Run #npm start to run the application
